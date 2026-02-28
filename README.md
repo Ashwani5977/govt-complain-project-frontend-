@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+🏛 Govt Complaint Portal – Frontend (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Govt Complaint Portal Frontend is a React-based web application that enables citizens of Uttar Pradesh to register, login, and submit government complaints district-wise (75 districts) for issues such as water supply, electricity, and other public services.
 
-## Available Scripts
+This frontend communicates with a deployed Java Servlet-based REST API backend.
 
-In the project directory, you can run:
+🌐 Live Application
 
-### `npm start`
+Frontend (React - Hosted on Render):
+👉 https://govt-project-kpaw.onrender.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Backend API (Java Servlets - Hosted on Render):
+👉 https://complaint-portal-xfaa.onrender.com
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🚀 Features
 
-### `npm test`
+👤 User Registration (Signup)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🔐 Secure Login Authentication
 
-### `npm run build`
+📝 Submit Complaint Form
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📍 District-wise Complaint Submission (All 75 Districts of UP)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🏷 Complaint Categories (Water, Electricity, etc.)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔄 REST API Integration
 
-### `npm run eject`
+📱 Responsive Design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+⚡ Optimized Production Build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🛠️ Tech Stack
+🔹 Frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+React.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+JavaScript (ES6+)
 
-## Learn More
+HTML5
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+CSS3
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Axios (API communication)
 
-### Code Splitting
+React Router (Navigation)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🔹 Backend (Connected API)
 
-### Analyzing the Bundle Size
+Java (Servlets)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+JDBC
 
-### Making a Progressive Web App
+MySQL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+HikariCP
 
-### Advanced Configuration
+Gson
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🔹 Deployment
 
-### Deployment
+Render (Frontend & Backend hosted separately)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+⚙️ Local Development Setup
+1️⃣ Clone Repository
+git clone https://github.com/Ashwani5977/govt-complain-project-frontend-.git
+cd govt-complaint-frontend
+2️⃣ Install Dependencies
+npm install
+3️⃣ Configure Backend URL
 
-### `npm run build` fails to minify
+Inside your API configuration file (example: src/api.js), ensure:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+const BASE_URL = "https://complaint-portal-xfaa.onrender.com";
+4️⃣ Start Development Server
+npm start
+
+The app will run at:
+
+http://localhost:3000
+🏗 Application Architecture
+React Frontend
+   ⬇ REST API Calls (Axios)
+Java Servlet Backend
+   ⬇ JDBC
+MySQL Database
+📂 Project Structure
+src/
+ ├── components/
+ ├── pages/
+ ├── services/
+ ├── api.js
+ ├── App.js
+ └── index.js
+🎯 Project Objective
+
+The objective of this frontend application is to provide a simple, accessible, and efficient digital platform for citizens to register complaints and improve communication with government authorities.
+
+🔮 Future Enhancements
+
+Admin Panel UI
+
+Complaint Status Tracking
+
+User Profile Management
+
+Role-Based Access UI
+
+Analytics Dashboard
+
+UI/UX Enhancements
+
+💡 Project Highlights
+
+✔ Full-Stack Integration
+
+✔ Production Deployment
+
+✔ REST API Communication
+
+✔ Authentication System
+
+✔ Real-world Government Complaint Use Case
